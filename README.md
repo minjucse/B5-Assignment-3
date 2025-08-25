@@ -16,23 +16,23 @@ A **Library Management System** built with **Express**, **TypeScript**, and **Mo
 ## 📂 Project Folder Structure
 
 
-### 📁 Folder Explanation
-- **src/app/** → Core application logic and configuration  
-- **src/controllers/** → Handles API request logic  
-  - `book.controller.ts` → API logic for books  
-  - `borrow.controller.ts` → API logic for borrowing books  
-- **src/models/** → Mongoose schemas and database models  
-  - `book.model.ts` → Book schema  
-  - `borrow.model.ts` → Borrow schema  
-- **src/interfaces/** → TypeScript interfaces for type safety  
-  - `book.interface.ts` → Book interface  
-  - `borrow.interface.ts` → Borrow interface  
-- **app.ts** → Express app setup  
-- **server.ts** → Application entry point  
-- **.env** → Environment variables  
-- **package.json** → Project dependencies and scripts  
-- **tsconfig.json** → TypeScript configuration  
-- **vercel.json** → Vercel deployment configuration
+- **src/**
+  - **app/**  
+  - **controllers/**
+    - `book.controller.ts`
+    - `borrow.controller.ts`
+  - **models/**
+    - `book.model.ts`
+    - `borrow.model.ts`
+  - **interfaces/**
+    - `book.interface.ts`
+    - `borrow.interface.ts`
+- `app.ts`
+- `server.ts`
+- `.env`
+- `package.json`
+- `tsconfig.json`
+- `vercel.json`
 
 
 
