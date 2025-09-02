@@ -5,14 +5,11 @@ import { borrowRoutes } from "./app/controllers/borrow.controller";
 
 const app: Application = express();
 
-const allowedOrigins = ["http://localhost:5173"];
-
-const corsOptions: cors.CorsOptions = {
-  origin: allowedOrigins,
-  credentials: true, 
-};
-
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: ['http://localhost:5173', 'https://minimal-nu-ashy.vercel.app']
+   })
+);
 app.use(express.json());
 app.use("/api/books", booksRoutes);
 app.use("/api/borrow", borrowRoutes);
